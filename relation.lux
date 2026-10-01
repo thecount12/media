@@ -1,0 +1,8 @@
+var g = Graph();
+g.addEdge("alice", "bob");
+g.addEdge("bob", "carol");
+g.addEdge("alice", "carol");
+var dot = g.toDot();
+writeFile("relate.dot", dot);
+print dot;
+
